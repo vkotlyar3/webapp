@@ -5,8 +5,8 @@ const port = 3000;
 
 // app.use(cors());
 
-app.get('/', (request, response) => {
-  response.send({});
+app.get('/test', (request, response) => {
+  response.send({ test: 'test' });
 });
 
 app.listen(port, (err) => {
