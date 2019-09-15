@@ -1,19 +1,19 @@
 {
   "steps": [
-    {
-      "id": "Testing",
-      "name": "ubuntu",
-      "args": [
-        "echo",
-        "Hello GCP CI/CD"
-      ]
-    },
+//    {
+//      "id": "Testing",
+//      "name": "ubuntu",
+//      "args": [
+//        "echo",
+//        "Hello GCP CI/CD"
+//      ]
+//    },
     {
       "name": "gcr.io/cloud-builders/gsutil",
       "args": [
         "cp",
         "-r",
-        "frontend",
+        "frontend/*",
         "gs://$PROJECT_ID-webapp/target"
       ]
     }
