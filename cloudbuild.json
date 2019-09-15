@@ -1,6 +1,7 @@
 {
   "steps": [
     {
+      "id": "Deploy to bucket",
       "name": "gcr.io/cloud-builders/gsutil",
       "args": [
         "cp",
@@ -8,6 +9,17 @@
         "frontend/*",
         "gs://$PROJECT_ID-webapp/target"
       ]
-    }
+    },
+    {
+      "id": "Make bucket public",
+      "name": "gcr.io/cloud-builders/gsutil",
+      "args": [
+        "acl",
+        "ch",
+        "-u",
+        "AllUsers:R",
+        "gs://$PROJECT_ID-webapp/target"
+      ]
+    },
   ]
 }
