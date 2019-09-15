@@ -1,13 +1,5 @@
 {
   "steps": [
-//    {
-//      "id": "Testing",
-//      "name": "ubuntu",
-//      "args": [
-//        "echo",
-//        "Hello GCP CI/CD"
-//      ]
-//    },
     {
       "name": "gcr.io/cloud-builders/gsutil",
       "args": [
