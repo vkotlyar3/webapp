@@ -7,7 +7,7 @@
         "rm",
         "-a",
         "-r",
-        "gs://$PROJECT_ID-webapp/target"
+        "gs://$PROJECT_ID-webapp-1/target"
       ]
     },
     {
@@ -17,7 +17,7 @@
         "rsync",
         "-R",
         "frontend",
-        "gs://$PROJECT_ID-webapp/target"
+        "gs://$PROJECT_ID-webapp-1/target"
       ]
     },
     {
@@ -28,7 +28,7 @@
         "ch",
         "-u",
         "AllUsers:R",
-        "gs://$PROJECT_ID-webapp/target/*"
+        "gs://$PROJECT_ID-webapp-1/target/*"
       ]
     },
   ]
