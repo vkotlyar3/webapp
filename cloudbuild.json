@@ -4,9 +4,9 @@
       "id": "Deploy to bucket",
       "name": "gcr.io/cloud-builders/gsutil",
       "args": [
-        "cp",
-        "-r",
-        "frontend/*",
+        "rsync",
+        "-R",
+        "frontend",
         "gs://$PROJECT_ID-webapp/target"
       ]
     },
