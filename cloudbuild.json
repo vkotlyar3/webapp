@@ -1,6 +1,16 @@
 {
   "steps": [
     {
+      "id": "Clear bucket",
+      "name": "gcr.io/cloud-builders/gsutil",
+      "args": [
+        "rm",
+        "-a",
+        "-r",
+        "gs://$PROJECT_ID-webapp/target"
+      ]
+    },
+    {
       "id": "Deploy to bucket",
       "name": "gcr.io/cloud-builders/gsutil",
       "args": [
