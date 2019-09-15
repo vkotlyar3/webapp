@@ -1,0 +1,19 @@
+{
+  "steps": [
+    {
+      "id": "Testing",
+      "name": "gcr.io/cloud-builders/echo",
+      "args": [
+        "Hello world"
+      ]
+    },
+    {
+      "name": "gcr.io/cloud-builders/gsutil",
+      "args": [
+        "cp",
+        "frontend",
+        "gs://$PROJECT_ID-webapp/target"
+      ]
+    }
+  ]
+}
