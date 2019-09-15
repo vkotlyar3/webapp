@@ -2,9 +2,10 @@
   "steps": [
     {
       "id": "Testing",
-      "name": "gcr.io/cloud-builders/echo",
+      "name": "ubuntu",
       "args": [
-        "Hello world"
+        "echo",
+        "Hello GCP CI/CD"
       ]
     },
     {
