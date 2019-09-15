@@ -7,7 +7,7 @@
         "rm",
         "-a",
         "-r",
-        "gs://$PROJECT_ID-webapp-1/target"
+        "gs://$PROJECT_ID-webapp-1"
       ]
     },
     {
