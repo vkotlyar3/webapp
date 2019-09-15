@@ -12,6 +12,7 @@
       "name": "gcr.io/cloud-builders/gsutil",
       "args": [
         "cp",
+        "-r",
         "frontend",
         "gs://$PROJECT_ID-webapp/target"
       ]
