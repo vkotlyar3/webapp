@@ -18,7 +18,7 @@
         "ch",
         "-u",
         "AllUsers:R",
-        "gs://$PROJECT_ID-webapp/target"
+        "gs://$PROJECT_ID-webapp/target/*"
       ]
     },
   ]
